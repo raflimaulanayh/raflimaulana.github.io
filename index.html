@@ -244,9 +244,11 @@
                     <img src="/assets/img/belajar-coding.jpg" alt="" class="w-full h-48 object-cover">
                     <div class="py-8 px-6">
                         <h3>
-                            <a href="#" class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate dark:text-white">Tips Belajar Programming</a>
+                            <a href="#" class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate dark:text-white">Tips Belajar Programming Secara Otodidak</a>
                         </h3>
-                        <p class="font-medium text-secondary text-base mb-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque, veniam.</p>
+                        <p class="font-medium text-secondary text-base mb-5">
+
+                            Di zaman yang serba canggih seperti saat ini, kamu dapat mempelajari segala hal dengan mudah. Contohnya, kamu bisa belajar programming secara otodidak.</p>
                         <a href="https://www.dicoding.com/blog/belajar-programming-secara-otodidak/" target="_blank" class="font-medium text-sm bg-primary py-2 px-4 rounded-md text-white hover:opacity-80">Baca Selengkapnya</a>
                     </div>
                 </div>
@@ -258,7 +260,7 @@
                         <h3>
                             <a href="#" class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate dark:text-white">Tempat wisata di Sumedang</a>
                         </h3>
-                        <p class="font-medium text-secondary text-base mb-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque, veniam.</p>
+                        <p class="font-medium text-secondary text-base mb-5">Jika Anda punya rencana untuk berlibur ke Sumedang, Jangan khawatir akan keindahannya, Kabupaten ini menawarkan cukup banyak wisata pilihan untuk Anda dikunjungi.</p>
                         <a href="https://tempatwisataseru.com/tempat-wisata-di-sumedang/" target="_blank" class="font-medium text-sm bg-primary py-2 px-4 rounded-md text-white hover:opacity-80">Baca Selengkapnya</a>
                     </div>
                 </div>
@@ -270,7 +272,7 @@
                         <h3>
                             <a href="#" class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate dark:text-white">Tempat Ngopi Di Sumedang</a>
                         </h3>
-                        <p class="font-medium text-secondary text-base mb-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque, veniam.</p>
+                        <p class="font-medium text-secondary text-base mb-5">Ruang bersama dan Café di Sumedang. Tempat berdiskusi, kerja, kumpul atau nongkrong bersama teman.</p>
                         <a href="https://sawala.space/" target="_blank" class="font-medium text-sm bg-primary py-2 px-4 rounded-md text-white hover:opacity-80">Baca Selengkapnya</a>
                     </div>
                 </div>
@@ -291,26 +293,26 @@
             </div>
         </div>
         
-        <form action="">
+        <form name="submit-to-google-sheet" method="POST">
             <div class="w-full lg:w-2/3 lg:mx-auto">
-
                 <div class="w-full px-4 mb-8">
                     <label for="name" class="text-base text-primary font-bold">Nama</label>
-                    <input type="text" id="name" class="w-full bg-slate-300 text-dark rounded-md p-3 focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary">
+                    <input type="text" name="name" class="w-full bg-slate-300 text-dark rounded-md p-3 focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary" required>
             </div>
             <div class="w-full px-4 mb-8">
                 <label for="email" class="text-base text-primary font-bold">Email</label>
-                <input type="text" id="email" class="w-full bg-slate-300 text-dark rounded-md p-3 focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary">
+                <input type="email" name="email" class="w-full bg-slate-300 text-dark rounded-md p-3 focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary" required>
             </div>
             <div class="w-full px-4 mb-8">
                 <label for="name" class="text-base text-primary font-bold">Pesan</label>
-                <textarea type="text" id="name" class="w-full bg-slate-300 text-dark rounded-md p-3 focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary h-32"></textarea>
+                <textarea name="message" class="w-full bg-slate-300 text-dark rounded-md p-3 focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary h-32"></textarea>
             </div>
             <div class="w-full px-4">
-                <button type="button" class="text-base font-semibold bg-primary py-3 px-5 rounded-full hover:shadow-lg text-white transition duration-300 hover:opacity-90 w-full">Kirim</button>
+                <button type="submit" class="text-base font-semibold bg-primary py-3 px-5 rounded-full hover:shadow-lg text-white transition duration-300 hover:opacity-90 w-full">Submit</button>
             </div>
         </div>
         </form>
+        <span id="msg" class="text-green-800 flex justify-center text-sm"></span>
         
     </div>
 </section>
@@ -413,6 +415,23 @@
 <!-- Back to top end -->
 
 <script src="dist/script.js"></script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxGof1bcS3md_bfuf0u_ZMRfwtVuSfnijDoYCRfTjEfFrnlaBjGlwG1iY9LYEC2c5XSgg/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent Succesfully"
+            setTimeout(() => {
+                msg.innerHTML = ""
+            }, 3000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
 </body>
 </body>
 </html>
