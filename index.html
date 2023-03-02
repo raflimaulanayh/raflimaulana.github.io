@@ -293,7 +293,7 @@
             </div>
         </div>
         
-        <form name="submit-to-google-sheet" method="POST">
+        <form name="submit-to-google-sheet">
             <div class="w-full lg:w-2/3 lg:mx-auto">
                 <div class="w-full px-4 mb-8">
                     <label for="name" class="text-base text-primary font-bold">Nama</label>
@@ -312,7 +312,7 @@
             </div>
         </div>
         </form>
-        <span id="msg" class="text-green-800 flex justify-center text-sm"></span>
+        <div id="msg" class="text-green-700 flex justify-center pt-10"></div>
         
     </div>
 </section>
@@ -416,7 +416,7 @@
 
 <script src="dist/script.js"></script>
 <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbxGof1bcS3md_bfuf0u_ZMRfwtVuSfnijDoYCRfTjEfFrnlaBjGlwG1iY9LYEC2c5XSgg/exec'
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwaJxFfqWKpPh51w6oXKtKG6GaYRuJ0X7KB6t-hgkQUHHmFWCn3BTIcP1Zr81JKbRmpFQ/exec'
     const form = document.forms['submit-to-google-sheet']
   
     form.addEventListener('submit', e => {
