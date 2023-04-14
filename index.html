@@ -22,46 +22,46 @@
 <body>
 
     <!-- Header Start -->
-    <header id="header" class="bg-transparent absolute top-0 lef-0 w-full flex items-center z-10 ">
+    <header id="header" class="absolute top-0 z-10 flex items-center w-full bg-transparent lef-0 ">
         <div class="container">
-            <div class="flex items-center justify-between relative">
+            <div class="relative flex items-center justify-between">
                 <div class="px-4">
-                    <a href="#home" class="font-bold text-primary block text-lg py-6">Rafli Sky</a>
+                    <a href="#home" class="block py-6 text-lg font-bold text-primary">Rafli Sky</a>
                 </div>
                 <div class="flex items-center px-4">
-                    <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
-                        <span class="origin-top-left hamburger-line transition duration-300 ease-in-out"></span>
-                        <span class="hamburger-line transition duration-300 ease-in-out"></span>
-                        <span class="origin-bottom-left hamburger-line transition duration-300 ease-in-out"></span>
+                    <button id="hamburger" name="hamburger" type="button" class="absolute block right-4 lg:hidden">
+                        <span class="transition duration-300 ease-in-out origin-top-left hamburger-line"></span>
+                        <span class="transition duration-300 ease-in-out hamburger-line"></span>
+                        <span class="transition duration-300 ease-in-out origin-bottom-left hamburger-line"></span>
                     </button>
 
                     <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none dark:bg-dark dark:shadow-slate-400 lg:dark:bg-transparent">
                         <ul class="block lg:flex">
                             <li class="group">
-                                <a href="#home" class="text-base text-dark py-3 flex mx-8 group-hover:text-primary dark:text-white">Home</a>
+                                <a href="#home" class="flex py-3 mx-8 text-base text-dark group-hover:text-primary dark:text-white">Home</a>
                             </li>
                             <li class="group">
-                                <a href="#about" class="text-base text-dark py-3 flex mx-8 group-hover:text-primary dark:text-white">About</a>
+                                <a href="#about" class="flex py-3 mx-8 text-base text-dark group-hover:text-primary dark:text-white">About</a>
                             </li>
                             <li class="group">
-                                <a href="#portfolio" class="text-base text-dark py-3 flex mx-8 group-hover:text-primary dark:text-white">Portfolio</a>
+                                <a href="#portfolio" class="flex py-3 mx-8 text-base text-dark group-hover:text-primary dark:text-white">Portfolio</a>
                             </li>
                             <li class="group">
-                                <a href="#clients" class="text-base text-dark py-3 flex mx-8 group-hover:text-primary dark:text-white">Clients</a>
+                                <a href="#clients" class="flex py-3 mx-8 text-base text-dark group-hover:text-primary dark:text-white">Clients</a>
                             </li>
                             <li class="group">
-                                <a href="#blog" class="text-base text-dark py-3 flex mx-8 group-hover:text-primary dark:text-white">Blog</a>
+                                <a href="#blog" class="flex py-3 mx-8 text-base text-dark group-hover:text-primary dark:text-white">Blog</a>
                             </li>
                             <li class="group">
-                                <a href="#contact" class="text-base text-dark py-3 flex mx-8 group-hover:text-primary dark:text-white">Contact</a>
+                                <a href="#contact" class="flex py-3 mx-8 text-base text-dark group-hover:text-primary dark:text-white">Contact</a>
                             </li>
                             <li class="flex items-center pl-8 mt-3 lg:mt-0">
                                 <div class="flex">
                                     <span class="mr-2 text-sm text-slate-700">light</span>
                                     <input type="checkbox" class="hidden" id="dark-toggle">
                                     <label for="dark-toggle">
-                                        <div class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-700 p-1">
-                                            <div class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-500 ease-in-out"></div>
+                                        <div class="flex items-center h-5 p-1 rounded-full cursor-pointer w-9 bg-slate-700">
+                                            <div class="w-4 h-4 transition duration-500 ease-in-out bg-white rounded-full toggle-circle"></div>
                                         </div>
                                     </label>
                                     <span class="ml-2 text-sm text-slate-700">dark</span>
@@ -79,16 +79,16 @@
 <section id="home" class="pt-28 dark:bg-dark">
     <div class="container">
         <div class="flex flex-wrap">
-            <div class="w-full self-center px-4 lg:w-1/2">
-                <h1 class="text-base font-semibold text-primary md:text-xl">Hallo Everyone, Saya <span class="block font-bold text-dark text-4xl dark:text-white">Rafli Maulana</span></h1>
-                <h2 class="font-medium text-secondary text-lg mb-5 lg:text-2xl">Front-End And <span class="text-dark dark:text-white">UI/UX Web Developer</span></h2>
-                <p class="font-medium text-secondary mb-10 leading-relaxed">Nothing is impossible. <span class="font-semibold text-dark dark:text-white">KEEP SPIRIT</span></p>
+            <div class="self-center w-full px-4 lg:w-1/2">
+                <h1 class="text-base font-semibold text-primary md:text-xl">Hallo Everyone, Saya <span class="block text-4xl font-bold text-dark dark:text-white">Rafli Maulana</span></h1>
+                <h2 class="mb-5 text-lg font-medium text-secondary lg:text-2xl">Front-End And <span class="text-dark dark:text-white">UI/UX Web Developer</span></h2>
+                <p class="mb-10 font-medium leading-relaxed text-secondary">Nothing is impossible. <span class="font-semibold text-dark dark:text-white">KEEP SPIRIT</span></p>
 
-                <a href="#contact" class="itext-base font-semibold bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out text-white">Contact Me</a>
+                <a href="#contact" class="px-8 py-3 font-semibold text-white transition duration-300 ease-in-out rounded-full itext-base bg-primary hover:shadow-lg hover:opacity-80">Contact Me</a>
             </div> 
-            <div class="w-full self-end px-7 lg:w-1/2">
-                <div class="mt-16 relative lg:mt-9 lg:right-0 rounded-2xl">
-                    <img src="assets/img/rafli-foto-new.png" alt="Rafli Sky" class="max-w-full z-10 relative mx-auto shadow-xl rounded-xl object-cover">
+            <div class="self-end w-full px-7 lg:w-1/2">
+                <div class="relative mt-16 lg:mt-9 lg:right-0 rounded-2xl">
+                    <img src="assets/img/profile/developer-pic-1.png" alt="Rafli Sky" class="relative z-10 object-cover max-w-full mx-auto">
                 </div>
             </div>
         </div>
@@ -97,28 +97,28 @@
 <!-- Hero Section End -->
 
 <!-- About Section Start -->
-<section id="about" class="pt-36 pb-32 dark:bg-dark">
+<section id="about" class="pt-24 pb-28 dark:bg-dark">
     <div class="container">
         <div class="flex flex-wrap">
             <div class="w-full px-4 mb-10 lg:w-1/2">
-                <h4 class="font-bold uppercase text-primary text-lg mb-3">Tentang Saya</h4>
-                <h2 class="font-bold text-dark text-3xl mb-5 max-w-md dark:text-white">Coding adalah jalan ninjaku!</h2>
-                <p class="font-medium text-base text-secondary max-w-xl">Saya adalah seorang siswa jurusan rekayasa perangkat lunak (RPL), yang memiliki ketertarikan pada ilmu teknologi khususnya dalam bidang programming, saya menguasai bahasa pemerograman Javascript dengan librarynya React JS dan juga frameworknya Next JS. Ketika saya style saya biasa menggunakan framework CSS yaitu Tailwind CSS dan Pada saat praktek coding saya biasa menggunakan Visual Studio Code.</p>
+                <h4 class="mb-3 text-lg font-bold uppercase text-primary">Tentang Saya</h4>
+                <h2 class="max-w-md mb-5 text-3xl font-bold text-dark dark:text-white">Coding adalah jalan ninjaku!</h2>
+                <p class="max-w-xl text-base font-medium text-secondary">Saya adalah seorang siswa jurusan rekayasa perangkat lunak (RPL), yang memiliki ketertarikan pada ilmu teknologi khususnya dalam bidang programming, saya menguasai bahasa pemerograman Javascript dengan librarynya React JS dan juga frameworknya Next JS. Ketika saya style saya biasa menggunakan framework CSS yaitu Tailwind CSS dan Pada saat praktek coding saya biasa menggunakan Visual Studio Code.</p>
             </div>
             <div class="w-full px-4 lg:w-1/2">
-                <h3 class="font-semibold text-dark text-2xl mb-4 dark:text-white lg:pt-10 lg:text-3xl">Mari berteman</h3>
-                <p class="font-medium text-base text-secondary mb-6">Ayo ikuti sosial media saya</p>
+                <h3 class="mb-4 text-2xl font-semibold text-dark dark:text-white lg:pt-10 lg:text-3xl">Mari berteman</h3>
+                <p class="mb-6 text-base font-medium text-secondary">Ayo ikuti sosial media saya</p>
                 <div class="flex items-center">
                     <!-- youtube -->
-                    <a href="https://youtube.com/@rafliadijaya2196" aria-label="youtube rafli"target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-400 hover:bg-primary hover:border-primary hover:text-white">
+                    <a href="https://youtube.com/@rafliadijaya2196" aria-label="youtube rafli"target="_blank" class="flex items-center justify-center mr-3 border rounded-full w-9 h-9 border-slate-400 hover:bg-primary hover:border-primary hover:text-white">
                         <svg viewBox="0 0 512 512" width="20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="fill-current dark:fill-white"><g><path d="M260.4,449c-57.1-1.8-111.4-3.2-165.7-5.3c-11.7-0.5-23.6-2.3-35-5c-21.4-5-36.2-17.9-43.8-39c-6.1-17-8.3-34.5-9.9-52.3   C2.5,305.6,2.5,263.8,4.2,222c1-23.6,1.6-47.4,7.9-70.3c3.8-13.7,8.4-27.1,19.5-37c11.7-10.5,25.4-16.8,41-17.5   c42.8-2.1,85.5-4.7,128.3-5.1c57.6-0.6,115.3,0.2,172.9,1.3c24.9,0.5,50,1.8,74.7,5c22.6,3,39.5,15.6,48.5,37.6   c6.9,16.9,9.5,34.6,11,52.6c3.9,45.1,4,90.2,1.8,135.3c-1.1,22.9-2.2,45.9-8.7,68.2c-7.4,25.6-23.1,42.5-49.3,48.3   c-10.2,2.2-20.8,3-31.2,3.4C366.2,445.7,311.9,447.4,260.4,449z M205.1,335.3c45.6-23.6,90.7-47,136.7-70.9   c-45.9-24-91-47.5-136.7-71.4C205.1,240.7,205.1,287.6,205.1,335.3z"/></g></svg>
                     </a>
                     <!-- Instagram -->
-                    <a href="https://www.instagram.com/rafmlnayh_" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-400 hover:bg-primary hover:border-primary hover:text-white">
+                    <a href="https://www.instagram.com/rafmlnayh_" target="_blank" class="flex items-center justify-center mr-3 border rounded-full w-9 h-9 border-slate-400 hover:bg-primary hover:border-primary hover:text-white">
                         <svg width="20" class="fill-current dark:fill-white" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><g><path d="M505,257c0,34.8-0.7,69.7,0.2,104.5c1.5,61.6-37.2,109.2-86.5,130.4c-19.8,8.5-40.6,13-62.1,13c-67.3,0.1-134.7,1-202-0.3   c-50.7-1-92.4-22.2-122.3-64c-15.7-22-23.2-47-23.2-74.1c0-71.7,0-143.3,0-215c0-58.5,28.5-99.4,79.1-126C110.2,14,134.1,9.1,159,9   c65.3,0,130.7-0.4,196,0.2c50.7,0.4,93,19.8,124.2,60.6c17.4,22.8,25.8,49,25.8,77.8C505,184,505,220.5,505,257z M46,257   c0,36.7,0,73.3,0,110c0,16.4,3.8,31.8,12.3,45.7c22.3,36.5,56,54.3,97.8,55c67.1,1,134.3,0.4,201.5,0.2c16.5,0,32.5-3.4,47.4-10.5   c40.6-19.4,63.3-50.3,63.1-96.7c-0.4-71-0.1-142-0.1-213c0-20.1-5.7-38.5-17.6-54.7c-23-31.1-54.8-46.4-92.8-46.8   c-67-0.8-134-0.3-201-0.2c-14.3,0-28.1,2.9-41.5,7.9c-36.8,13.7-71,48.4-69.4,99.5C46.9,188,46,222.5,46,257z"/><path d="M257.6,363c-64.5,0-116.5-51.4-116.6-115.4c-0.1-63,52.3-114.6,116.4-114.6c64.3-0.1,116.5,51.4,116.6,114.9   C374,311.3,321.9,362.9,257.6,363z M257.6,326c43.9,0,79.5-35.1,79.4-78.3c-0.1-42.8-35.7-77.8-79.4-77.8   c-43.9,0-79.7,34.9-79.7,78C178,291.1,213.7,326.1,257.6,326z"/><path d="M387.5,98c13.5,0,24.5,11.5,24.5,25.6c-0.1,14.1-11.2,25.5-24.7,25.4c-13.3-0.1-24.2-11.5-24.2-25.3   C363,109.6,374,98,387.5,98z"/></g></svg>
                     </a>
                     <!-- WhatsApp -->
-                    <a href="https://wa.me/081320179936" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-400 hover:bg-primary hover:border-primary hover:text-white">
+                    <a href="https://wa.me/081320179936" target="_blank" class="flex items-center justify-center mr-3 border rounded-full w-9 h-9 border-slate-400 hover:bg-primary hover:border-primary hover:text-white">
                         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
 	 width="20" viewBox="0 0 90 90" class="fill-current dark:fill-white">
 <g>
@@ -137,7 +137,7 @@
 <g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
                     </a>
                     <!-- git hub -->
-                    <a href="https://github.com/Raflisky" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-400 hover:bg-primary hover:border-primary hover:text-white">
+                    <a href="https://github.com/Raflisky" target="_blank" class="flex items-center justify-center mr-3 border rounded-full w-9 h-9 border-slate-400 hover:bg-primary hover:border-primary hover:text-white">
                         <svg class="fill-current dark:fill-white" width="100%" height="100%" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><rect id="Icons" x="0" y="-192" width="1280" height="800" style="fill:none;"/><g id="Icons1" serif:id="Icons"><g id="Strike"></g><g id="H1"></g><g id="H2"></g><g id="H3"></g><g id="list-ul"></g><g id="hamburger-1"></g><g id="hamburger-2"></g><g id="list-ol"></g><g id="list-task"></g><g id="trash"></g><g id="vertical-menu"></g><g id="horizontal-menu"></g><g id="sidebar-2"></g><g id="Pen"></g><g id="Pen1" serif:id="Pen"></g><g id="clock"></g><g id="external-link"></g><g id="hr"></g><g id="info"></g><g id="warning"></g><g id="plus-circle"></g><g id="minus-circle"></g><g id="vue"></g><g id="cog"></g><path id="github" d="M32.029,8.345c-13.27,0 -24.029,10.759 -24.029,24.033c0,10.617 6.885,19.624 16.435,22.803c1.202,0.22 1.64,-0.522 1.64,-1.16c0,-0.569 -0.02,-2.081 -0.032,-4.086c-6.685,1.452 -8.095,-3.222 -8.095,-3.222c-1.093,-2.775 -2.669,-3.514 -2.669,-3.514c-2.182,-1.492 0.165,-1.462 0.165,-1.462c2.412,0.171 3.681,2.477 3.681,2.477c2.144,3.672 5.625,2.611 6.994,1.997c0.219,-1.553 0.838,-2.612 1.526,-3.213c-5.336,-0.606 -10.947,-2.669 -10.947,-11.877c0,-2.623 0.937,-4.769 2.474,-6.449c-0.247,-0.608 -1.072,-3.051 0.235,-6.36c0,0 2.018,-0.646 6.609,2.464c1.917,-0.533 3.973,-0.8 6.016,-0.809c2.041,0.009 4.097,0.276 6.017,0.809c4.588,-3.11 6.602,-2.464 6.602,-2.464c1.311,3.309 0.486,5.752 0.239,6.36c1.54,1.68 2.471,3.826 2.471,6.449c0,9.232 -5.62,11.263 -10.974,11.858c0.864,0.742 1.632,2.208 1.632,4.451c0,3.212 -0.029,5.804 -0.029,6.591c0,0.644 0.432,1.392 1.652,1.157c9.542,-3.185 16.421,-12.186 16.421,-22.8c0,-13.274 -10.76,-24.033 -24.034,-24.033"/><g id="logo"></g><g id="eye-slash"></g><g id="eye"></g><g id="toggle-off"></g><g id="shredder"></g><g id="spinner--loading--dots-" serif:id="spinner [loading, dots]"></g><g id="react"></g></g></svg>
                     </a>
                 </div>
@@ -149,61 +149,61 @@
 
 <!-- Portfolio Start -->
 
-    <section id="portfolio" class="pt-36 pb-16 bg-gray-800 dark:bg-slate-800">
+    <section id="portfolio" class="pb-16 bg-gray-800 pt-36 dark:bg-slate-800">
         <div class="container">
             <div class="w-full px-4">
-                <div class="max-w-xl mx-auto text-center mb-16">
-                    <h4 class="font-semibold text-lg text-primary mb-2">Portfolio</h4>
-                    <h2 class="font-bold text-white text-3xl dark:text-white mb-1">My Project</h2>
+                <div class="max-w-xl mx-auto mb-16 text-center">
+                    <h4 class="mb-2 text-lg font-semibold text-primary">Portfolio</h4>
+                    <h2 class="mb-1 text-3xl font-bold text-white dark:text-white">My Project</h2>
                     <p class="font-medium text-slate-500 dark:text-slate-500 text-md md:text-lg">Berikut adalah beberapa project yang pernah saya buat.</p>
                 </div>
             </div>
-            <div class="w-full px-4 flex flex-wrap gap-1 justify-center xl:w-10/12 xl:mx-auto overflow-hidden">
-                <div class="mb-12 md:w-1/2 rounded-lg bg-slate-900 shadow-lg">
+            <div class="flex flex-wrap justify-center w-full gap-1 px-4 overflow-hidden xl:w-10/12 xl:mx-auto">
+                <div class="mb-12 rounded-lg shadow-lg md:w-1/2 bg-slate-900">
                     <div class="rounded-t-lg shadow-md overflow-hidden h-[165px] object-cover">
                     <img src="assets/img/project-foodid.png" alt="Absen Siswa Web" width="w-full">
                     </div>
-                    <div class="pt-4 pb-8 px-6">
-                        <h3 class="font-semibold text-xl text-white dark:text-white mt-5 mb-5">Landing Page Foodid</h3>
-                    <p class="font-medium text-base text-slate-500">Website ini dibuat dengan menggunakan bahasa pemerograman Javascript dengan frameworknya Dari React yaitu Next JS dan untuk Stylenya saya menggunakan Tailwind Css</p>
+                    <div class="px-6 pt-4 pb-8">
+                        <h3 class="mt-5 mb-5 text-xl font-semibold text-white dark:text-white">Landing Page Foodid</h3>
+                    <p class="text-base font-medium text-slate-500">Website ini dibuat dengan menggunakan bahasa pemerograman Javascript dengan frameworknya Dari React yaitu Next JS dan untuk Stylenya saya menggunakan Tailwind Css</p>
                     <div class="pt-4">
-                        <a href="https://food-id.vercel.app/" class="text-sm text-white hover:text-white/90 cursor-pointer bg-primary hover:bg-primary/70 py-1 px-2 rounded-md">visit 🔗</a>
+                        <a href="https://food-id.vercel.app/" class="px-2 py-1 text-sm text-white rounded-md cursor-pointer hover:text-white/90 bg-primary hover:bg-primary/70">visit 🔗</a>
                     </div>
                     </div>
                 </div>
-                <div class="mb-12 md:w-1/2 rounded-lg bg-slate-900 shadow-lg overflow-hidden">
+                <div class="mb-12 overflow-hidden rounded-lg shadow-lg md:w-1/2 bg-slate-900">
                     <div class="rounded-t-lg shadow-md overflow-hidden h-[165px] object-cover">
                         <img src="assets/img/cover-car-rental.png" alt="Absen Siswa Web" width="w-full">
                     </div>
-                    <div class="pt-4 pb-8 px-6">
-                        <h3 class="font-semibold text-xl text-white dark:text-white mt-5 mb-5">Website Car Rental</h3>
-                    <p class="font-medium text-base text-slate-500">Website car rental adalah website yang menyediakan mobil rental dari berbagai tipe mobil.</p>
+                    <div class="px-6 pt-4 pb-8">
+                        <h3 class="mt-5 mb-5 text-xl font-semibold text-white dark:text-white">Website Car Rental</h3>
+                    <p class="text-base font-medium text-slate-500">Website car rental adalah website yang menyediakan mobil rental dari berbagai tipe mobil.</p>
                     <div class="pt-4">
-                        <a href="https://car-rental-five-livid.vercel.app/" class="text-sm text-white hover:text-white/90 cursor-pointer bg-primary hover:bg-primary/70 py-1 px-2 rounded-md">visit 🔗</a>
+                        <a href="https://car-rental-five-livid.vercel.app/" class="px-2 py-1 text-sm text-white rounded-md cursor-pointer hover:text-white/90 bg-primary hover:bg-primary/70">visit 🔗</a>
                     </div>
                     </div>
                 </div>
-                <div class="mb-12 md:w-1/2 rounded-lg bg-slate-900 shadow-lg overflow-hidden">
+                <div class="mb-12 overflow-hidden rounded-lg shadow-lg md:w-1/2 bg-slate-900">
                     <div class="rounded-t-lg shadow-md overflow-hidden h-[165px] object-cover">
                         <img src="assets/img/absenGG.png" alt="Absen Siswa Web" width="w-full">
                     </div>
-                    <div class="pt-4 pb-8 px-6">
-                        <h3 class="font-semibold text-xl text-white dark:text-white mt-5 mb-5">Aplikasi Pengelola Data Sekolah Berbasis Web</h3>
-                    <p class="font-medium text-base text-slate-500">Aplikasi berbasis web ini dibuat dengan menggunakan bahasa pemerograman php dan framework Codeigniter</p>
+                    <div class="px-6 pt-4 pb-8">
+                        <h3 class="mt-5 mb-5 text-xl font-semibold text-white dark:text-white">Aplikasi Pengelola Data Sekolah Berbasis Web</h3>
+                    <p class="text-base font-medium text-slate-500">Aplikasi berbasis web ini dibuat dengan menggunakan bahasa pemerograman php dan framework Codeigniter</p>
                     <div class="pt-4">
-                        <a href="#" class="text-sm text-white hover:text-white/90 cursor-pointer bg-primary hover:bg-primary/70 py-1 px-2 rounded-md">visit 🔗</a>
+                        <a href="#" class="px-2 py-1 text-sm text-white rounded-md cursor-pointer hover:text-white/90 bg-primary hover:bg-primary/70">visit 🔗</a>
                     </div>
                     </div>
                 </div>
-                <div class="mb-12 md:w-1/2 rounded-lg bg-slate-900 shadow-lg overflow-hidden">
+                <div class="mb-12 overflow-hidden rounded-lg shadow-lg md:w-1/2 bg-slate-900">
                     <div class="rounded-t-lg shadow-md overflow-hidden h-[165px] object-cover">
                         <img src="assets/img/website-konversi.png" alt="Absen Siswa Web" width="w-full">
                     </div>
-                    <div class="pt-4 pb-8 px-6">
-                        <h3 class="font-semibold text-xl text-white dark:text-white mt-5 mb-5">Website Konversi Suhu, Mata Uang dan Panjang</h3>
-                    <p class="font-medium text-base text-slate-500">Tujuan website ini dibuat untuk mempermudah para user, dalam mengkonversi suhu, mata uang, dan Panjang.</p>
+                    <div class="px-6 pt-4 pb-8">
+                        <h3 class="mt-5 mb-5 text-xl font-semibold text-white dark:text-white">Website Konversi Suhu, Mata Uang dan Panjang</h3>
+                    <p class="text-base font-medium text-slate-500">Tujuan website ini dibuat untuk mempermudah para user, dalam mengkonversi suhu, mata uang, dan Panjang.</p>
                     <div class="pt-4">
-                        <a href="https://konversi-s-u-p.netlify.app/" target="_blank" class="text-sm text-white hover:text-white/90 cursor-pointer bg-primary hover:bg-primary/70 py-1 px-2 rounded-md">visit 🔗</a>
+                        <a href="https://konversi-s-u-p.netlify.app/" target="_blank" class="px-2 py-1 text-sm text-white rounded-md cursor-pointer hover:text-white/90 bg-primary hover:bg-primary/70">visit 🔗</a>
                     </div>
                     </div>
                 </div>
@@ -214,12 +214,12 @@
 
 
 <!-- Clients Section Start -->
-    <section id="clients" class="pt-36 pb-48 bg-dark">
+    <section id="clients" class="pb-48 pt-36 bg-dark">
         <div class="container">
             <div class="w-full px-4">
                 <div class="mx-auto text-center">
-                    <h4 class="font-semibold text-lg text-primary mb-2">Clients</h4>
-                    <h2 class="font-bold text-white text-3xl mb-8 sm:text-4xl lg:text-5xl dark:text-white">Pernah Bekerjasama Dengan</h2>
+                    <h4 class="mb-2 text-lg font-semibold text-primary">Clients</h4>
+                    <h2 class="mb-8 text-3xl font-bold text-white sm:text-4xl lg:text-5xl dark:text-white">Pernah Bekerjasama Dengan</h2>
                 </div>
             </div>
             <div class="w-full px-4">
@@ -240,51 +240,51 @@
 <!-- Clients Section End -->
 
 <!-- Blog Section Start -->
-<section id="blog" class="pt-36 pb-32 bg-slate-100 dark:bg-slate-700">
+<section id="blog" class="pb-32 pt-36 bg-slate-100 dark:bg-slate-700">
     <div class="container">
         <div class="w-full px-4">
-            <div class="max-w-xl mx-auto text-center mb-16">
-                <h4 class="font-semibold text-lg text-primary mb-2">Blog</h4>
-                <h2 class="font-bold text-dark text-3xl dark:text-white">Tulisan Terkini</h2>
+            <div class="max-w-xl mx-auto mb-16 text-center">
+                <h4 class="mb-2 text-lg font-semibold text-primary">Blog</h4>
+                <h2 class="text-3xl font-bold text-dark dark:text-white">Tulisan Terkini</h2>
                 <p class="font-medium text-secondary text-md md:text-lg">Beberapa blog yang upload.</p>
             </div>
         </div>
         <div class="flex flex-wrap">
             <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
-                <div class="bg-white rounded-xl overflow-hidden dark:bg-dark shadow-lg mb-10">
-                    <img src="/assets/img/belajar-coding.jpg" alt="" class="w-full h-48 object-cover">
-                    <div class="py-8 px-6">
+                <div class="mb-10 overflow-hidden bg-white shadow-lg rounded-xl dark:bg-dark">
+                    <img src="/assets/img/belajar-coding.jpg" alt="" class="object-cover w-full h-48">
+                    <div class="px-6 py-8">
                         <h3>
-                            <a href="#" class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate dark:text-white">Tips Belajar Programming Secara Otodidak</a>
+                            <a href="#" class="block mb-3 text-xl font-semibold truncate text-dark hover:text-primary dark:text-white">Tips Belajar Programming Secara Otodidak</a>
                         </h3>
-                        <p class="font-medium text-secondary text-base mb-5">
+                        <p class="mb-5 text-base font-medium text-secondary">
 
                             Di zaman yang serba canggih seperti saat ini, kamu dapat mempelajari segala hal dengan mudah. Contohnya, kamu bisa belajar programming secara otodidak.</p>
-                        <a href="https://www.dicoding.com/blog/belajar-programming-secara-otodidak/" target="_blank" class="font-medium text-sm bg-primary py-2 px-4 rounded-md text-white hover:opacity-80">Baca Selengkapnya</a>
+                        <a href="https://www.dicoding.com/blog/belajar-programming-secara-otodidak/" target="_blank" class="px-4 py-2 text-sm font-medium text-white rounded-md bg-primary hover:opacity-80">Baca Selengkapnya</a>
                     </div>
                 </div>
             </div>
             <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
-                <div class="bg-white rounded-xl overflow-hidden dark:bg-dark shadow-lg mb-10">
-                    <img src="/assets/img/wisata-smd.jpg" alt="" class="w-full h-48 object-cover">
-                    <div class="py-8 px-6">
+                <div class="mb-10 overflow-hidden bg-white shadow-lg rounded-xl dark:bg-dark">
+                    <img src="/assets/img/wisata-smd.jpg" alt="" class="object-cover w-full h-48">
+                    <div class="px-6 py-8">
                         <h3>
-                            <a href="#" class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate dark:text-white">Tempat wisata di Sumedang</a>
+                            <a href="#" class="block mb-3 text-xl font-semibold truncate text-dark hover:text-primary dark:text-white">Tempat wisata di Sumedang</a>
                         </h3>
-                        <p class="font-medium text-secondary text-base mb-5">Jika Anda punya rencana untuk berlibur ke Sumedang, Jangan khawatir akan keindahannya, Kabupaten ini menawarkan cukup banyak wisata pilihan untuk Anda dikunjungi.</p>
-                        <a href="https://tempatwisataseru.com/tempat-wisata-di-sumedang/" target="_blank" class="font-medium text-sm bg-primary py-2 px-4 rounded-md text-white hover:opacity-80">Baca Selengkapnya</a>
+                        <p class="mb-5 text-base font-medium text-secondary">Jika Anda punya rencana untuk berlibur ke Sumedang, Jangan khawatir akan keindahannya, Kabupaten ini menawarkan cukup banyak wisata pilihan untuk Anda dikunjungi.</p>
+                        <a href="https://tempatwisataseru.com/tempat-wisata-di-sumedang/" target="_blank" class="px-4 py-2 text-sm font-medium text-white rounded-md bg-primary hover:opacity-80">Baca Selengkapnya</a>
                     </div>
                 </div>
             </div>
             <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
-                <div class="bg-white rounded-xl overflow-hidden dark:bg-dark shadow-lg mb-10">
-                    <img src="/assets/img/nongkrong-smd.webp" alt="" class="w-full h-48 object-cover">
-                    <div class="py-8 px-6">
+                <div class="mb-10 overflow-hidden bg-white shadow-lg rounded-xl dark:bg-dark">
+                    <img src="/assets/img/nongkrong-smd.webp" alt="" class="object-cover w-full h-48">
+                    <div class="px-6 py-8">
                         <h3>
-                            <a href="#" class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate dark:text-white">Tempat Ngopi Di Sumedang</a>
+                            <a href="#" class="block mb-3 text-xl font-semibold truncate text-dark hover:text-primary dark:text-white">Tempat Ngopi Di Sumedang</a>
                         </h3>
-                        <p class="font-medium text-secondary text-base mb-5">Ruang bersama dan Café di Sumedang. Tempat berdiskusi, kerja, kumpul atau nongkrong bersama teman.</p>
-                        <a href="https://sawala.space/" target="_blank" class="font-medium text-sm bg-primary py-2 px-4 rounded-md text-white hover:opacity-80">Baca Selengkapnya</a>
+                        <p class="mb-5 text-base font-medium text-secondary">Ruang bersama dan Café di Sumedang. Tempat berdiskusi, kerja, kumpul atau nongkrong bersama teman.</p>
+                        <a href="https://sawala.space/" target="_blank" class="px-4 py-2 text-sm font-medium text-white rounded-md bg-primary hover:opacity-80">Baca Selengkapnya</a>
                     </div>
                 </div>
             </div>
@@ -294,12 +294,12 @@
 <!-- Blog Section End --> 
 
 <!-- Contact Section Start -->
-<section id="contact" class="pt-36 pb-32 dark:bg-slate-800">
+<section id="contact" class="pb-32 pt-36 dark:bg-slate-800">
     <div class="container">
         <div class="w-full px 4">
-            <div class="max-w-xl mx-auto text-center mb-16">
-                <h4 class="font-semibold text-lg text-primary mb-2">Contact</h4>
-                <h2 class="font-bold text-dark dark:text-white text-3xl mb-1">Hubungi Kami</h2>
+            <div class="max-w-xl mx-auto mb-16 text-center">
+                <h4 class="mb-2 text-lg font-semibold text-primary">Contact</h4>
+                <h2 class="mb-1 text-3xl font-bold text-dark dark:text-white">Hubungi Kami</h2>
                 <p class="font-medium text-slate-600 dark:text-slate-300 text-md md:text-lg">Jika ingin berkomunikasi lebih dekat dan juga memberi kritik dan juga saran, anda bisa bisa mengirim pesan kepada saya.</p>
             </div>
         </div>
@@ -307,73 +307,73 @@
         <form name="submit-to-google-sheet">
             <div class="w-full lg:w-2/3 lg:mx-auto">
                 <div class="w-full px-4 mb-8">
-                    <label for="name" class="text-base text-primary font-bold">Nama</label>
-                    <input type="text" name="name" class="w-full bg-slate-300 text-dark rounded-md p-3 focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary" required>
+                    <label for="name" class="text-base font-bold text-primary">Nama</label>
+                    <input type="text" name="name" class="w-full p-3 rounded-md bg-slate-300 text-dark focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary" required>
             </div>
             <div class="w-full px-4 mb-8">
-                <label for="email" class="text-base text-primary font-bold">Email</label>
-                <input type="email" name="email" class="w-full bg-slate-300 text-dark rounded-md p-3 focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary" required>
+                <label for="email" class="text-base font-bold text-primary">Email</label>
+                <input type="email" name="email" class="w-full p-3 rounded-md bg-slate-300 text-dark focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary" required>
             </div>
             <div class="w-full px-4 mb-8">
-                <label for="name" class="text-base text-primary font-bold">Pesan</label>
-                <textarea name="message" class="w-full bg-slate-300 text-dark rounded-md p-3 focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary h-32"></textarea>
+                <label for="name" class="text-base font-bold text-primary">Pesan</label>
+                <textarea name="message" class="w-full h-32 p-3 rounded-md bg-slate-300 text-dark focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary"></textarea>
             </div>
             <div class="w-full px-4">
-                <button type="submit" class="text-base font-semibold bg-primary py-3 px-5 rounded-full hover:shadow-lg text-white transition duration-300 hover:opacity-90 w-full">Submit</button>
+                <button type="submit" class="w-full px-5 py-3 text-base font-semibold text-white transition duration-300 rounded-full bg-primary hover:shadow-lg hover:opacity-90">Submit</button>
             </div>
         </div>
         </form>
-        <div id="msg" class="text-green-700 flex justify-center pt-10"></div>
+        <div id="msg" class="flex justify-center pt-10 text-green-700"></div>
         
     </div>
 </section>
 <!-- Contact Section End -->
 
 <!-- Footer Start -->
-<footer class="bg-dark pt-24 pb-12">
+<footer class="pt-24 pb-12 bg-dark">
     <div class="container">
         <div class="flex flex-wrap">
-            <div class="w-full px-4 mb-12 text-slate-500 font-medium md:w-1/3">
-                <h2 class="font-bold text-4xl text-white mb-5">Sky Universe</h2>
-                <h3 class="font-bold text-2xl mb-2">Hubungi Kami</h3>
+            <div class="w-full px-4 mb-12 font-medium text-slate-500 md:w-1/3">
+                <h2 class="mb-5 text-4xl font-bold text-white">Sky Universe</h2>
+                <h3 class="mb-2 text-2xl font-bold">Hubungi Kami</h3>
                 <p>raflimaulana214@gmail.com</p>
                 <p>Indonesia, Jawa Barat</p>
                 <p>Sumedang</p>
             </div>
             <div class="w-full px-4 mb-12 md:w-1/3">
-                <h3 class="font-semibold text-xl text-white mb-5">Kategori Tulisan</h3>
+                <h3 class="mb-5 text-xl font-semibold text-white">Kategori Tulisan</h3>
                 <ul class="text-slate-300">
                     <li>
-                        <a href="#" class="inline-block text-base hover:text-primary mb-3">Belajar</a>
+                        <a href="#" class="inline-block mb-3 text-base hover:text-primary">Belajar</a>
                    </li>
                     <li>
-                        <a href="#" class="inline-block text-base hover:text-primary mb-3">Wisata</a>
+                        <a href="#" class="inline-block mb-3 text-base hover:text-primary">Wisata</a>
                     </li>
                     <li>
-                        <a href="#" class="inline-block text-base hover:text-primary mb-3">Nongkrong</a>
+                        <a href="#" class="inline-block mb-3 text-base hover:text-primary">Nongkrong</a>
                     </li>
                 </ul>
             </div>
             <div class="w-full px-4 mb-12 md:w-1/3">
-                <h3 class="font-semibold text-xl text-white mb-5">Kategori Tautan</h3>
+                <h3 class="mb-5 text-xl font-semibold text-white">Kategori Tautan</h3>
                 <ul class="text-slate-300">
                     <li>
-                        <a href="#home" class="inline-block text-base hover:text-primary mb-3">Home</a>
+                        <a href="#home" class="inline-block mb-3 text-base hover:text-primary">Home</a>
                    </li>
                     <li>
-                        <a href="#about" class="inline-block text-base hover:text-primary mb-3">About</a>
+                        <a href="#about" class="inline-block mb-3 text-base hover:text-primary">About</a>
                     </li>
                     <li>
-                        <a href="#portfolio" class="inline-block text-base hover:text-primary mb-3">Portfolio</a>
+                        <a href="#portfolio" class="inline-block mb-3 text-base hover:text-primary">Portfolio</a>
                     </li>
                     <li>
-                        <a href="#clients" class="inline-block text-base hover:text-primary mb-3">Clients</a>
+                        <a href="#clients" class="inline-block mb-3 text-base hover:text-primary">Clients</a>
                     </li>
                     <li>
-                        <a href="#blog" class="inline-block text-base hover:text-primary mb-3">Blog</a>
+                        <a href="#blog" class="inline-block mb-3 text-base hover:text-primary">Blog</a>
                     </li>
                     <li>
-                        <a href="#contact" class="inline-block text-base hover:text-primary mb-3">Contact</a>
+                        <a href="#contact" class="inline-block mb-3 text-base hover:text-primary">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -382,15 +382,15 @@
         <div class="w-full pt-10 border-t border-slate-700">
             <div class="flex items-center justify-center mb-5">
                 <!-- youtube -->
-                <a href="https://youtube.com/@rafliadijaya2196" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-400 hover:bg-primary hover:border-primary hover:text-white">
+                <a href="https://youtube.com/@rafliadijaya2196" target="_blank" class="flex items-center justify-center mr-3 border rounded-full w-9 h-9 border-slate-400 hover:bg-primary hover:border-primary hover:text-white">
                     <svg viewBox="0 0 512 512" width="20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="fill-white"><g><path d="M260.4,449c-57.1-1.8-111.4-3.2-165.7-5.3c-11.7-0.5-23.6-2.3-35-5c-21.4-5-36.2-17.9-43.8-39c-6.1-17-8.3-34.5-9.9-52.3   C2.5,305.6,2.5,263.8,4.2,222c1-23.6,1.6-47.4,7.9-70.3c3.8-13.7,8.4-27.1,19.5-37c11.7-10.5,25.4-16.8,41-17.5   c42.8-2.1,85.5-4.7,128.3-5.1c57.6-0.6,115.3,0.2,172.9,1.3c24.9,0.5,50,1.8,74.7,5c22.6,3,39.5,15.6,48.5,37.6   c6.9,16.9,9.5,34.6,11,52.6c3.9,45.1,4,90.2,1.8,135.3c-1.1,22.9-2.2,45.9-8.7,68.2c-7.4,25.6-23.1,42.5-49.3,48.3   c-10.2,2.2-20.8,3-31.2,3.4C366.2,445.7,311.9,447.4,260.4,449z M205.1,335.3c45.6-23.6,90.7-47,136.7-70.9   c-45.9-24-91-47.5-136.7-71.4C205.1,240.7,205.1,287.6,205.1,335.3z"/></g></svg>
                 </a>
                 <!-- Instagram -->  
-                <a href="https://instagram.com/rafmlnayh_" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-400 hover:bg-primary hover:border-primary hover:text-white">
+                <a href="https://instagram.com/rafmlnayh_" target="_blank" class="flex items-center justify-center mr-3 border rounded-full w-9 h-9 border-slate-400 hover:bg-primary hover:border-primary hover:text-white">
                     <svg width="20" class="fill-white" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><g><path d="M505,257c0,34.8-0.7,69.7,0.2,104.5c1.5,61.6-37.2,109.2-86.5,130.4c-19.8,8.5-40.6,13-62.1,13c-67.3,0.1-134.7,1-202-0.3   c-50.7-1-92.4-22.2-122.3-64c-15.7-22-23.2-47-23.2-74.1c0-71.7,0-143.3,0-215c0-58.5,28.5-99.4,79.1-126C110.2,14,134.1,9.1,159,9   c65.3,0,130.7-0.4,196,0.2c50.7,0.4,93,19.8,124.2,60.6c17.4,22.8,25.8,49,25.8,77.8C505,184,505,220.5,505,257z M46,257   c0,36.7,0,73.3,0,110c0,16.4,3.8,31.8,12.3,45.7c22.3,36.5,56,54.3,97.8,55c67.1,1,134.3,0.4,201.5,0.2c16.5,0,32.5-3.4,47.4-10.5   c40.6-19.4,63.3-50.3,63.1-96.7c-0.4-71-0.1-142-0.1-213c0-20.1-5.7-38.5-17.6-54.7c-23-31.1-54.8-46.4-92.8-46.8   c-67-0.8-134-0.3-201-0.2c-14.3,0-28.1,2.9-41.5,7.9c-36.8,13.7-71,48.4-69.4,99.5C46.9,188,46,222.5,46,257z"/><path d="M257.6,363c-64.5,0-116.5-51.4-116.6-115.4c-0.1-63,52.3-114.6,116.4-114.6c64.3-0.1,116.5,51.4,116.6,114.9   C374,311.3,321.9,362.9,257.6,363z M257.6,326c43.9,0,79.5-35.1,79.4-78.3c-0.1-42.8-35.7-77.8-79.4-77.8   c-43.9,0-79.7,34.9-79.7,78C178,291.1,213.7,326.1,257.6,326z"/><path d="M387.5,98c13.5,0,24.5,11.5,24.5,25.6c-0.1,14.1-11.2,25.5-24.7,25.4c-13.3-0.1-24.2-11.5-24.2-25.3   C363,109.6,374,98,387.5,98z"/></g></svg>
                 </a>
                 <!-- WhatsApp -->
-                <a href="https://wa.me/081320179936" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-400 hover:bg-primary hover:border-primary hover:text-white">
+                <a href="https://wa.me/081320179936" target="_blank" class="flex items-center justify-center mr-3 border rounded-full w-9 h-9 border-slate-400 hover:bg-primary hover:border-primary hover:text-white">
                     <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
  width="20" viewBox="0 0 90 90" class="fill-white">
 <g>
@@ -409,11 +409,11 @@
 <g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
                 </a>
                 <!-- git hub -->
-                <a href="https://github.com/Raflisky" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-400 hover:bg-primary hover:border-primary hover:text-white">
+                <a href="https://github.com/Raflisky" target="_blank" class="flex items-center justify-center mr-3 border rounded-full w-9 h-9 border-slate-400 hover:bg-primary hover:border-primary hover:text-white">
                     <svg class="fill-white" width="100%" height="100%" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><rect id="Icons" x="0" y="-192" width="1280" height="800" style="fill:none;"/><g id="Icons1" serif:id="Icons"><g id="Strike"></g><g id="H1"></g><g id="H2"></g><g id="H3"></g><g id="list-ul"></g><g id="hamburger-1"></g><g id="hamburger-2"></g><g id="list-ol"></g><g id="list-task"></g><g id="trash"></g><g id="vertical-menu"></g><g id="horizontal-menu"></g><g id="sidebar-2"></g><g id="Pen"></g><g id="Pen1" serif:id="Pen"></g><g id="clock"></g><g id="external-link"></g><g id="hr"></g><g id="info"></g><g id="warning"></g><g id="plus-circle"></g><g id="minus-circle"></g><g id="vue"></g><g id="cog"></g><path id="github" d="M32.029,8.345c-13.27,0 -24.029,10.759 -24.029,24.033c0,10.617 6.885,19.624 16.435,22.803c1.202,0.22 1.64,-0.522 1.64,-1.16c0,-0.569 -0.02,-2.081 -0.032,-4.086c-6.685,1.452 -8.095,-3.222 -8.095,-3.222c-1.093,-2.775 -2.669,-3.514 -2.669,-3.514c-2.182,-1.492 0.165,-1.462 0.165,-1.462c2.412,0.171 3.681,2.477 3.681,2.477c2.144,3.672 5.625,2.611 6.994,1.997c0.219,-1.553 0.838,-2.612 1.526,-3.213c-5.336,-0.606 -10.947,-2.669 -10.947,-11.877c0,-2.623 0.937,-4.769 2.474,-6.449c-0.247,-0.608 -1.072,-3.051 0.235,-6.36c0,0 2.018,-0.646 6.609,2.464c1.917,-0.533 3.973,-0.8 6.016,-0.809c2.041,0.009 4.097,0.276 6.017,0.809c4.588,-3.11 6.602,-2.464 6.602,-2.464c1.311,3.309 0.486,5.752 0.239,6.36c1.54,1.68 2.471,3.826 2.471,6.449c0,9.232 -5.62,11.263 -10.974,11.858c0.864,0.742 1.632,2.208 1.632,4.451c0,3.212 -0.029,5.804 -0.029,6.591c0,0.644 0.432,1.392 1.652,1.157c9.542,-3.185 16.421,-12.186 16.421,-22.8c0,-13.274 -10.76,-24.033 -24.034,-24.033"/><g id="logo"></g><g id="eye-slash"></g><g id="eye"></g><g id="toggle-off"></g><g id="shredder"></g><g id="spinner--loading--dots-" serif:id="spinner [loading, dots]"></g><g id="react"></g></g></svg>
                 </a>
             </div>
-            <p class="font-medium text-xs text-slate-500 text-center hover:text-slate-300 transition duration-500">© 2023 Rafli Maulana Yusuf Herman. All rights reserved.</p>
+            <p class="text-xs font-medium text-center transition duration-500 text-slate-500 hover:text-slate-300">© 2023 Rafli Maulana Yusuf Herman. All rights reserved.</p>
         </div>
     </div> 
 </footer>
