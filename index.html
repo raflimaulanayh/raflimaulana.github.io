@@ -304,19 +304,19 @@
             </div>
         </div>
         
-        <form name="submit-to-google-sheet">
+        <form name="portfolio_contact_form">
             <div class="w-full lg:w-2/3 lg:mx-auto">
                 <div class="w-full px-4 mb-8">
                     <label for="name" class="text-base font-bold text-primary">Nama</label>
-                    <input type="text" name="name" class="w-full p-3 rounded-md bg-slate-300 text-dark focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary" required>
+                    <input type="text" name="name" class="w-full p-3 rounded-md bg-slate-300 text-dark focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary">
             </div>
             <div class="w-full px-4 mb-8">
                 <label for="email" class="text-base font-bold text-primary">Email</label>
-                <input type="email" name="email" class="w-full p-3 rounded-md bg-slate-300 text-dark focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary" required>
+                <input type="email" name="email" class="w-full p-3 rounded-md bg-slate-300 text-dark focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary">
             </div>
             <div class="w-full px-4 mb-8">
                 <label for="name" class="text-base font-bold text-primary">Pesan</label>
-                <textarea name="message" class="w-full h-32 p-3 rounded-md bg-slate-300 text-dark focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary"></textarea>
+                <textarea placeholder="Message" name="message" class="w-full h-32 p-3 rounded-md bg-slate-300 text-dark focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary"></textarea>
             </div>
             <div class="w-full px-4">
                 <button type="submit" class="w-full px-5 py-3 text-base font-semibold text-white transition duration-300 rounded-full bg-primary hover:shadow-lg hover:opacity-90">Submit</button>
@@ -425,24 +425,18 @@
 </a>
 <!-- Back to top end -->
 
-<script src="dist/script.js"></script>
 <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbwaJxFfqWKpPh51w6oXKtKG6GaYRuJ0X7KB6t-hgkQUHHmFWCn3BTIcP1Zr81JKbRmpFQ/exec'
-    const form = document.forms['submit-to-google-sheet']
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbywQXfG7lfECVuB5OU7-84nnzQVXMvF6thRI7AZ4ueMRpQ_W4NXE2_QbcoR7t2YvzTO/exec'
+    const form = document.forms['portfolio_contact_form']
   
     form.addEventListener('submit', e => {
       e.preventDefault()
       fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            msg.innerHTML = "Message Sent Succesfully"
-            setTimeout(() => {
-                msg.innerHTML = ""
-            }, 3000)
-            form.reset()
-        })
+        .then(response => console.log('Success!', response))
         .catch(error => console.error('Error!', error.message))
     })
   </script>
+<script src="dist/script.js"></script>
 </body>
 </body>
 </html>
